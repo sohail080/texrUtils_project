@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
 
 export default function About(props) {
 let myStyle={
@@ -41,7 +41,7 @@ let myStyle={
     <div  className="card-header" id="headingOne" >
       <h2 className="mb-0">
         <button className="btn btn-link btn-block text-left " style={myStyle} type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          {props.first}
+          <strong>{props.first}</strong>
         </button> 
       </h2>
     </div>
@@ -56,7 +56,7 @@ let myStyle={
     <div className="card-header" id="headingTwo" style={myStyle}>
       <h2 className="mb-0">
         <button className="btn btn-link btn-block text-left collapsed" style={myStyle} type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        {props.second}
+        <strong>{props.second}</strong>
         </button>
       </h2>
     </div>
@@ -70,7 +70,7 @@ let myStyle={
     <div className="card-header" id="headingThree" style={myStyle}>
       <h2 className="mb-0">
         <button className="btn btn-link btn-block text-left collapsed" style={myStyle} type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        {props.third}
+        <strong>{props.third}</strong>
         </button>
       </h2>
     </div>
